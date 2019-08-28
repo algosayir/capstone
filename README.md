@@ -2,19 +2,19 @@
 
 The capstone will build upon the knowledge you have gained in the course in order to build a decentralized housing product. 
 
-#Addresses
-##Contract Addresses (SolnSquareVerifier)
+# Addresses
+## Contract Addresses (SolnSquareVerifier)
 0x57b43Bab0A9d09AAb2BaEDA76Eed0cec3ED55F61
 
 for the rest of addresses are in rinkeby_deployment_output.txt
 
-##Contract Abi's
+## Contract Abi's
 in eth-contracts\build\SolnSquareVerifier.json
 
-##OpenSea Market Place Storefront link's
+## OpenSea Market Place Storefront link's
 https://rinkeby.opensea.io/category/gosayir-token-tracker
 
-#How to use
+# How to use
 Clone project
 `npm install`
 `cd eth-contracts`
