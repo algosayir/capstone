@@ -1,0 +1,180 @@
+F:\algosayir_project_capstone\Blockchain-Capstone\eth-contracts>truffle migrate --reset --network rinkeby
+
+Compiling your contracts...
+===========================
+> Compiling .\contracts\ERC721Mintable.sol
+> Compiling .\contracts\Oraclize.sol
+> Compiling .\contracts\verifier.sol
+
+    > compilation warnings encountered:
+
+/F/algosayir_project_capstone/Blockchain-Capstone/eth-contracts/contracts/Oraclize.sol:371:5: Warning: Function state mutability can be restricted to pure
+    function __callback(bytes32 _myid, string memory _result, bytes memory _proof) public {
+    ^ (Relevant source part starts here and spans across multiple lines).
+,/F/algosayir_project_capstone/Blockchain-Capstone/eth-contracts/contracts/verifier.sol:449:5: Warning: Function state mutability can be restricted to view
+    function addition(G2Point memory p1, G2Point memory p2) internal returns (G2Point memory r) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+
+> Artifacts written to F:\algosayir_project_capstone\Blockchain-Capstone\eth-contracts\build\contracts
+> Compiled successfully using:
+   - solc: 0.5.2+commit.1df8f40c.Emscripten.clang
+
+
+Migrations dry-run (simulation)
+===============================
+> Network name:    'rinkeby-fork'
+> Network id:      4
+> Block gas limit: 0x6acfc0
+
+
+1_initial_migration.js
+======================
+
+   Deploying 'Migrations'
+   ----------------------
+   > block number:        4991928
+   > block timestamp:     1567017569
+   > account:             0x6d1657F913a3BD62212ce94C60c8DC2a460fD951
+   > balance:             18.64981176
+   > gas used:            258098
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.00258098 ETH
+
+   -------------------------------------
+   > Total cost:          0.00258098 ETH
+
+
+2_deploy_contracts.js
+=====================
+
+   Deploying 'GosayirERC721Token'
+   ------------------------------
+   > block number:        4991930
+   > block timestamp:     1567017587
+   > account:             0x6d1657F913a3BD62212ce94C60c8DC2a460fD951
+   > balance:             18.61580938
+   > gas used:            3373210
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.0337321 ETH
+
+
+   Deploying 'Verifier'
+   --------------------
+   > block number:        4991931
+   > block timestamp:     1567017601
+   > account:             0x6d1657F913a3BD62212ce94C60c8DC2a460fD951
+   > balance:             18.60311882
+   > gas used:            1269056
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.01269056 ETH
+
+
+   Deploying 'SolnSquareVerifier'
+   ------------------------------
+   > block number:        4991932
+   > block timestamp:     1567017629
+   > account:             0x6d1657F913a3BD62212ce94C60c8DC2a460fD951
+   > balance:             18.56426531
+   > gas used:            3885351
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.03885351 ETH
+
+   -------------------------------------
+   > Total cost:          0.08527617 ETH
+
+
+Summary
+=======
+> Total deployments:   4
+> Final cost:          0.08785715 ETH
+
+
+Starting migrations...
+======================
+> Network name:    'rinkeby'
+> Network id:      4
+> Block gas limit: 0x6aea72
+
+
+1_initial_migration.js
+======================
+   > Blocks: 0            Seconds: 13
+   > contract address:    0x7e1921407a59AdD10E47ECeE82CbaAfc53b7C8B9
+   > block number:        4991937
+   > block timestamp:     15670177133d3e47e86c6eafa56bc78d3c021d5caa9d03bfbfb5aff51c6f53b6f6
+   > account:             0x6d1657F913a3BD62212ce94C60c8DC2a460fD951
+   > balance:             18.64966176
+   > gas used:            273098
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.00273098 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:          0.00273098 ETH
+
+
+2_deploy_contracts.js
+=====================
+
+   Deploying 'GosayirERC721Token'
+   ------------------------------
+   > transaction hash:    0x206935bfd18a2d7587865cab3c70dd85cbbaaf9bb23889982b2b13dfbe3a9856
+   > Blocks: 1            Seconds: 9
+   > contract address:    0x02C537e6C214eD43dBb3A88D975c621454E49E61
+   > block number:        4991939
+   > block timestamp:     1567017743
+   > account:             0x6d1657F913a3BD62212ce94C60c8DC2a460fD951
+   > balance:             18.61400938
+   > gas used:            3523210
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.0352321 ETH
+
+
+   Deploying 'Verifier'
+   --------------------
+   > transaction hash:    0xbe1f6fe065041036aaeca17c1b9b66487df8859ce4f119086871ce89a056d3b0
+   > Blocks: 0            Seconds: 13
+   > contract address:    0xbB080EEB60BE83840dfab80baE18a7cCc2b09211
+   > block number:        4991941
+   > block timestamp:     1567017773
+   > account:             0x6d1657F913a3BD62212ce94C60c8DC2a460fD951
+   > balance:             18.60131882
+   > gas used:            1269056
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.01269056 ETH
+
+
+   Deploying 'SolnSquareVerifier'
+   ------------------------------
+   > transaction hash:    0xd2e0283ba6879c43b951a4a35dc6930453de38d02587c3ca8107bfd4e2c480ae
+   > Blocks: 0            Seconds: 9
+   > contract address:    0x57b43Bab0A9d09AAb2BaEDA76Eed0cec3ED55F61
+   > block number:        4991942
+   > block timestamp:     1567017788
+   > account:             0x6d1657F913a3BD62212ce94C60c8DC2a460fD951
+   > balance:             18.56081531
+   > gas used:            4050351
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.04050351 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:          0.08842617 ETH
+
+
+Summary
+=======
+> Total deployments:   4
+> Final cost:          0.09115715 ETH
